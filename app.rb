@@ -13,7 +13,7 @@ class App < Sinatra::Base
   
   post '/checkout' do
     
-    session["item"] = Checkout.new(params[:item])
-    @session = session
+    @session["item"] = Checkout.new(params[:item])
+    
   end
 end
