@@ -4,7 +4,7 @@ class Checkout
   @@all = []
   
   
-  def initialize(opt={})
+  def initialize(params={})
     @item = opt[:item]
     self.save
   end
